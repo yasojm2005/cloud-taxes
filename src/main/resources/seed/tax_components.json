@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "COMP_IVA_22",
+    "type": "PercentTax",
+    "key": "IVA",
+    "description": "IVA 22%",
+    "active": true,
+    "rate": 0.22
+  },
+  {
+    "_id": "COMP_ICO_5",
+    "type": "FixedTax",
+    "key": "ICO",
+    "description": "Impuesto fijo 5",
+    "active": true,
+    "amountPerUnit": 5.0
+  }
+]

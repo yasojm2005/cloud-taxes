@@ -1,0 +1,13 @@
+[
+  {
+    "_id": "URU_GENERAL_IVA",
+    "key": "URU_GENERAL_IVA",
+    "description": "Regla general Uruguay IVA 22% + ICO fijo",
+    "active": true,
+    "composition": "ADDITIVE",
+    "componentIds": [
+      "COMP_IVA_22",
+      "COMP_ICO_5"
+    ]
+  }
+]

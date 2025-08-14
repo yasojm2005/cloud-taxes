@@ -1,0 +1,25 @@
+server:
+  port: 8085
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/tax_service
+
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: when_authorized
+  metrics:
+    tags:
+      application: tax-service
+
+# Prometheus scrape endpoint: /actuator/prometheus
+app:
+  rounding:
+    scale: 2
+    mode: HALF_UP

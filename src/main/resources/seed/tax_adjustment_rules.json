@@ -1,0 +1,31 @@
+[
+  {
+    "_id": "doc_exempt_rule",
+    "key": "DOCUMENT_EXEMPT",
+    "description": "Zero tax for exempt documents",
+    "isActive": true,
+    "condition": {
+      "field": "documentType",
+      "operator": "EQUALS",
+      "value": "EXEMPT_INVOICE"
+    },
+    "action": {
+      "type": "SET_ZERO_TAX"
+    }
+  },
+  {
+    "_id": "gov_discount_rule",
+    "key": "GOVERNMENT_DISCOUNT",
+    "description": "50% discount for government entities",
+    "isActive": true,
+    "condition": {
+      "field": "customerType",
+      "operator": "EQUALS",
+      "value": "GOVERNMENT"
+    },
+    "action": {
+      "type": "PERCENTAGE_ADJUSTMENT",
+      "value": -50
+    }
+  }
+]
